@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.HistoryController">
+   <children>
+      <Label fx:id="titleForHistory" layoutX="24.0" layoutY="21.0" prefHeight="28.0" prefWidth="452.0" />
+      <Button fx:id="backToAuction" layoutX="683.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="55.0" text="Back" />
+      <Label fx:id="bidList" alignment="TOP_LEFT" layoutX="24.0" layoutY="86.0" prefHeight="297.0" prefWidth="557.0" text="" />
+      <ListView fx:id="listV" layoutX="24.0" layoutY="86.0" prefHeight="343.0" prefWidth="699.0" />
+      <TextField fx:id="searchBar" layoutX="228.0" layoutY="23.0" prefHeight="25.0" prefWidth="226.0" />
+      <Text layoutX="175.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" wrappingWidth="41.13671875" />
+      <Button fx:id="search" layoutX="461.0" layoutY="23.0" mnemonicParsing="false" onAction="#searchPressed" text="Enter" />
+      <Button layoutX="515.0" layoutY="23.0" mnemonicParsing="false" onAction="#clear" text="Clear Search" />
+   </children>
+</AnchorPane>

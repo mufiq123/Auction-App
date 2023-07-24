@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Item2Controller">
+   <children>
+      <Button layoutX="45.0" layoutY="383.0" mnemonicParsing="false" onAction="#item6Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 6" />
+      <Button layoutX="45.0" layoutY="210.0" mnemonicParsing="false" onAction="#item1Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 1" />
+      <Button layoutX="45.0" layoutY="251.0" mnemonicParsing="false" onAction="#item3Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 3" />
+      <Button layoutX="45.0" layoutY="295.0" mnemonicParsing="false" onAction="#item4Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 4" />
+      <Button layoutX="45.0" layoutY="338.0" mnemonicParsing="false" onAction="#item5Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 5" />
+      <Accordion layoutX="45.0" layoutY="252.0" />
+      <Button fx:id="userBidHistory" layoutX="816.0" layoutY="34.0" mnemonicParsing="false" onAction="#userBidPressed" text="User Bid History" />
+      <Label fx:id="id2" layoutX="401.0" layoutY="272.0" prefHeight="17.0" prefWidth="113.0" text="Label" />
+      <Label layoutX="339.0" layoutY="263.0" prefHeight="35.0" prefWidth="47.0" text="Item ID:" />
+      <Label fx:id="invalid1" layoutX="349.0" layoutY="440.0" prefHeight="45.0" prefWidth="197.0" text="Invalid Bid Amount! Try Again" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="bidButton2" layoutX="548.0" layoutY="410.0" mnemonicParsing="false" onAction="#bid2_pressed" text="Enter" />
+      <TextField fx:id="bid2" layoutX="415.0" layoutY="410.0" opacity="0.98" prefHeight="25.0" prefWidth="123.0" promptText="Enter Bid">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </TextField>
+      <Label fx:id="bidAmountBox2" layoutX="339.0" layoutY="405.0" prefHeight="35.0" prefWidth="102.0" text="Bid Amount:" />
+      <ImageView fx:id="auction2" fitHeight="150.0" fitWidth="200.0" layoutX="338.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@horse.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="end2" layoutX="436.0" layoutY="378.0" prefHeight="17.0" prefWidth="152.0" text="Label" />
+      <Label fx:id="description2" layoutX="419.0" layoutY="338.0" prefHeight="25.0" prefWidth="434.0" text="Label" />
+      <Label fx:id="price2" layoutX="403.0" layoutY="307.0" prefHeight="17.0" prefWidth="123.0" text="Label" />
+      <Label layoutX="339.0" layoutY="378.0" prefHeight="17.0" prefWidth="357.0" text="Buy Now Price:" />
+      <Label layoutX="339.0" layoutY="333.0" prefHeight="35.0" prefWidth="301.0" text="Description:" />
+      <Label layoutX="339.0" layoutY="298.0" prefHeight="35.0" prefWidth="47.0" text="Price:" />
+      <Label fx:id="nameLabel" layoutX="24.0" layoutY="24.0" prefHeight="45.0" prefWidth="759.0" text="Hello: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="soldOut" alignment="CENTER" layoutX="65.0" layoutY="520.0" prefHeight="52.0" prefWidth="801.0" text="   " textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="quit" layoutX="35.0" layoutY="482.0" mnemonicParsing="false" onAction="#quitPressed" prefHeight="25.0" prefWidth="61.0" text="QUIT" />
+      <Button fx:id="totBid2" layoutX="708.0" layoutY="34.0" mnemonicParsing="false" onAction="#totBid2" prefHeight="25.0" prefWidth="101.0" text="All Bid History" />
+   </children>
+</AnchorPane>

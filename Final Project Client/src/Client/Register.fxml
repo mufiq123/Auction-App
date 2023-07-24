@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.RegisterController">
+   <children>
+      <Text layoutX="244.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" textAlignment="CENTER" wrappingWidth="146.890625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter User Name:" />
+      <Text layoutX="59.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password:" />
+      <Text layoutX="59.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re Enter Password:" />
+      <TextField fx:id="user1" layoutX="191.0" layoutY="137.0" prefHeight="25.0" prefWidth="253.0" />
+      <TextField fx:id="pass1" layoutX="191.0" layoutY="183.0" prefHeight="25.0" prefWidth="253.0" />
+      <TextField fx:id="pass2" layoutX="191.0" layoutY="225.0" prefHeight="25.0" prefWidth="253.0" />
+      <Button layoutX="259.0" layoutY="328.0" mnemonicParsing="false" onAction="#but" text="Register and Login" />
+      <Text fx:id="invalid" fill="#ee0707" layoutX="241.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid User Name Try Again!" visible="false" />
+      <Text fx:id="invalidpass" fill="#ee0707" layoutX="229.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwords Do Not Match Try Again!" visible="false" />
+   </children>
+</AnchorPane>

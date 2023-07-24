@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ItemPickerController">
+   <children>
+      <Button layoutX="238.0" layoutY="312.0" mnemonicParsing="false" onAction="#item6Pressed" prefHeight="25.0" prefWidth="125.0" text="View Item 6" />
+      <Button layoutX="238.0" layoutY="138.0" mnemonicParsing="false" onAction="#displayItem2" prefHeight="25.0" prefWidth="125.0" text="View Item 2" />
+      <Button layoutX="238.0" layoutY="179.0" mnemonicParsing="false" onAction="#item3Pressed" prefHeight="25.0" prefWidth="125.0" text="View Item 3" />
+      <Button layoutX="238.0" layoutY="223.0" mnemonicParsing="false" onAction="#item4Pressed" prefHeight="25.0" prefWidth="125.0" text="View Item 4" />
+      <Button layoutX="238.0" layoutY="266.0" mnemonicParsing="false" onAction="#item5Pressed" prefHeight="25.0" prefWidth="125.0" text="View Item 5" />
+      <Button layoutX="238.0" layoutY="93.0" mnemonicParsing="false" onAction="#displayItem1" prefHeight="25.0" prefWidth="125.0" text="View Item 1" />
+      <Accordion layoutX="274.0" layoutY="179.0" />
+      <TextField fx:id="mainHeader" layoutX="25.0" layoutY="26.0" prefHeight="39.0" prefWidth="544.0" />
+   </children>
+</AnchorPane>

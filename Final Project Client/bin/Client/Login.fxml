@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane alignment="center" hgap="10" prefHeight="446.0" prefWidth="488.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.LoginController">
+    <padding>
+        <Insets bottom="40" left="40" right="40" top="40" />
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="125.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="200.0" prefWidth="200.0" />
+    </columnConstraints>
+   <children>
+       <!-- Add Header Label -->
+       <Label text="Login" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.rowSpan="1">
+           <font>
+               <Font name="Arial" size="24" />
+           </font>
+           <GridPane.margin>
+               <Insets bottom="20" left="0" right="0" top="20" />
+           </GridPane.margin>
+       </Label>
+       <!-- Add Email Label -->
+       <Label text="User Name: " GridPane.columnIndex="0" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin></Label>
+       <!-- Add Email Text Field -->
+       <TextField fx:id="username" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <!-- Add Password Label -->
+       <Label text="Password : " GridPane.columnIndex="0" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin></Label>
+       <!-- Add Password Field -->
+       <PasswordField fx:id="passwordField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+       <!-- Add Submit Button -->
+       <Button fx:id="submitButton" defaultButton="true" onAction="#login" prefHeight="40" prefWidth="81.0" text="Login" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="1">
+           <GridPane.margin>
+               <Insets bottom="20.0" left="30.0" top="20.0" />
+           </GridPane.margin>
+       </Button>
+      <Button fx:id="submitButton1" defaultButton="true" onAction="#login" prefHeight="40" prefWidth="81.0" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="175.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="submitButton2" defaultButton="true" onAction="#login" prefHeight="40" prefWidth="111.0" text="Register as Guest" GridPane.rowIndex="4" />
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

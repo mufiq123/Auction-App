@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.AuctionController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="759.0" text="Hello: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="288.0" prefHeight="35.0" prefWidth="47.0" text="Price:" />
+      <Label layoutX="329.0" layoutY="323.0" prefHeight="35.0" prefWidth="301.0" text="Description:" />
+      <Label layoutX="329.0" layoutY="368.0" prefHeight="17.0" prefWidth="357.0" text="Buy Now Price:" />
+      <Label fx:id="price1" layoutX="393.0" layoutY="297.0" prefHeight="17.0" prefWidth="123.0" text="Label" />
+      <Label fx:id="description1" layoutX="409.0" layoutY="328.0" prefHeight="25.0" prefWidth="434.0" text="Label" />
+      <Label fx:id="end1" layoutX="426.0" layoutY="368.0" prefHeight="17.0" prefWidth="152.0" text="Label" />
+      <ImageView fx:id="auction1" fitHeight="150.0" fitWidth="200.0" layoutX="328.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ban.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="bidAmountBox1" layoutX="329.0" layoutY="395.0" prefHeight="35.0" prefWidth="102.0" text="Bid Amount:" />
+      <TextField fx:id="bid1" layoutX="405.0" layoutY="400.0" opacity="0.98" prefHeight="25.0" prefWidth="123.0" promptText="Enter Bid">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </TextField>
+      <Button fx:id="bidButton1" layoutX="538.0" layoutY="400.0" mnemonicParsing="false" onAction="#bid1_pressed" text="Enter" />
+      <Label fx:id="invalid1" layoutX="339.0" layoutY="430.0" prefHeight="45.0" prefWidth="197.0" text="Invalid Bid Amount! Try Again" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="253.0" prefHeight="35.0" prefWidth="47.0" text="Item ID:" />
+      <Label fx:id="id1" layoutX="391.0" layoutY="262.0" prefHeight="17.0" prefWidth="113.0" text="Label" />
+      <Button fx:id="userBidHistory" layoutX="806.0" layoutY="24.0" mnemonicParsing="false" onAction="#userBidPressed" text="User Bid History" />
+      <Button fx:id="allBidHistory" layoutX="696.0" layoutY="24.0" mnemonicParsing="false" onAction="#allBidPressed" prefHeight="25.0" prefWidth="101.0" text="All Bid History" />
+      <Accordion layoutX="35.0" layoutY="242.0" />
+      <Button layoutX="35.0" layoutY="328.0" mnemonicParsing="false" onAction="#item5Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 5" />
+      <Button layoutX="35.0" layoutY="285.0" mnemonicParsing="false" onAction="#item4Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 4" />
+      <Button layoutX="35.0" layoutY="241.0" mnemonicParsing="false" onAction="#item3Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 3" />
+      <Button layoutX="35.0" layoutY="200.0" mnemonicParsing="false" onAction="#item2Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 2" />
+      <Button layoutX="35.0" layoutY="373.0" mnemonicParsing="false" onAction="#item6Pressed" prefHeight="25.0" prefWidth="123.0" text="View Item 6" />
+      <Label fx:id="soldOut" alignment="CENTER" layoutX="65.0" layoutY="520.0" prefHeight="52.0" prefWidth="801.0" text="   " textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="quit" layoutX="35.0" layoutY="482.0" mnemonicParsing="false" onAction="#quitPressed" prefHeight="25.0" prefWidth="61.0" text="QUIT" />
+   </children>
+</AnchorPane>
